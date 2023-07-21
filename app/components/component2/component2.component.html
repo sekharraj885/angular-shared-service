@@ -1,0 +1,10 @@
+<input type="text" [(ngModel)]='entered' (keyup)='updateData(entered)'>
+<span>Component2: </span>
+<div class="form-group">
+  <div class='form-inline'>
+    <input type="text" class="form-control" [(ngModel)]="val" placeholder="Add value" />
+    <button class="btn btn-success" (click)="addValue(val)">Add</button>
+  </div>
+</div>
+<hr />
+<pre><b>Component1:</b> {{comp1Val}}</pre>
